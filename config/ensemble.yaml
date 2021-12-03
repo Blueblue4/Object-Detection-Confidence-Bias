@@ -1,0 +1,13 @@
+name: "ensemble"
+defaults:
+  - all@_global_: default_ensemble
+  - _self_
+
+detectors:
+  - "CenterNet_HG_TTA_050"
+  - "CenterNet_HG_TTA_075"
+  - "CenterNet_HG_TTA_100"
+  - "CenterNet_HG_TTA_125"
+  - "CenterNet_HG_TTA_150"
+
+save_outputs: true

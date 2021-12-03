@@ -1,0 +1,27 @@
+name: "baseline_calibration"
+defaults:
+  - _self_
+  - paths/annotations: coco_2017 # path to coco annotations
+  - paths/detections: default # paths to detections in coco format
+  - detections: default_all # file names of detections for each split
+  - settings@_global_: default
+
+detector: "CenterNet_HG"
+
+seed: 123
+iou_threshold: 0.5
+apply_on: ["val", "test"]
+save_outputs: false
+
+calib:
+    on_split: "train"  # "val"
+    split_size: 0.6
+    list_types: ["quantile_spline"]
+    box_bins: [1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20] #
+    conf_bins: [4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 34, 40, 50] #
+
+optim:
+    metrics: ["mean_diff_all", "mse_all", "k_fold_mse", "k_fold_diff", "ece", "ap_estimate", "k_fold_abs_deviation", "k_fold_var"]
+    k_folds: 20
+    oracle_on: "val"
+

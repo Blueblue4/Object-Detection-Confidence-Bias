@@ -1,0 +1,14 @@
+numpy
+seaborn
+cmcrameri~=1.2
+sklearn~=0.0
+pycocotools~=2.0.2
+tqdm
+dufte~=0.2.27
+tikzplotlib~=0.9.12
+pandas
+hydra-core
+ensemble-boxes
+matplotlib
+scikit-learn
+omegaconf~=2.1.1

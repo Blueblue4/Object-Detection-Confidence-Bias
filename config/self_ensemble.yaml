@@ -1,0 +1,8 @@
+name: "ensemble"
+defaults:
+  - all@_global_: default_ensemble
+  - _self_
+
+detectors: "RetinaNetn"
+
+save_outputs: true

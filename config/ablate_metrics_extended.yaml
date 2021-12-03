@@ -1,0 +1,20 @@
+name: "ablate_metrics"
+defaults:
+  - all@_global_: default_calibrate
+  - _self_
+
+seed: 1
+apply_on: ["val_split2"]
+
+calib:
+  on_split: "val_split1"
+  split_size: 0.6
+  list_types: ["quantile_spline"]
+  box_bins: [2, 3, 4, 5, 6]
+  conf_bins: [4,5,6,8,10,12,14]
+
+optim:
+  metrics: ["tradeoff_full",  "k_fold_log", "k_fold_brier", "k_fold_diff", "ap_estimate", "ece", "mAP_calib", "oracle"]
+  k_folds: 20
+  oracle_on: "val_split2"
+

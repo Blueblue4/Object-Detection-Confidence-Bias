@@ -1,0 +1,9 @@
+name: "plot_miscalibration"
+defaults:
+  - all@_global_: default_plot_miscal
+  - _self_
+
+
+calib:
+  bbox_split: "default"
+

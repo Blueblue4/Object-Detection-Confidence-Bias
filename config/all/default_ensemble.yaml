@@ -1,0 +1,12 @@
+name: "default_ensemble"
+defaults:
+  - _self_
+  - paths/annotations: coco_2017
+  - paths/detections: default
+  - detections: default_all
+  - nms: nms
+  - settings@_global_: default
+
+
+split: "val"
+save_outputs: false

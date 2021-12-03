@@ -1,0 +1,19 @@
+name: "default_plot_miscalibration"
+defaults:
+  - _self_
+  - paths/annotations: coco_2017
+  - paths/detections: default
+  - detections: default_all
+  - settings@_global_: default
+
+detector: "CenterNet_HG"
+
+split: "train"
+iou_threshold: 0.5
+classes: 1
+bootstrap_samples: 5000
+
+calib:
+    type: "quantile_spline"
+    box_bins: 3
+    conf_bins: 10

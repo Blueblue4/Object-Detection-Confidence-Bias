@@ -1,0 +1,11 @@
+name: "plot_org_hist_bin"
+defaults:
+  - all@_global_: default_plot_miscal
+  - _self_
+
+split: "val"
+
+calib:
+    type: "baseline_indexing"
+    box_bins: 3
+    conf_bins: 7

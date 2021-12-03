@@ -1,0 +1,20 @@
+name: "explore_train"
+defaults:
+  - all@_global_: default_calibrate
+  - _self_
+
+seed: 1
+apply_on: ["val","test"]
+
+calib:
+  on_split: "train"
+  split_size: 0.6
+  list_types: ["quantile_spline"]
+  box_bins: [2, 3, 4, 5, 6]
+  conf_bins: [4,5,6,8,10,12,14]
+
+optim:
+  metrics: ["tradeoff_full", "kfold_log", "kfold_brier", "mAP_calib"]
+  k_folds: 20
+  oracle_on: "val"
+

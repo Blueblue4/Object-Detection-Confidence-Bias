@@ -1,0 +1,103 @@
+
+CenterNet_HG:
+  train: "Centernet_HG/centernet_hourglass_train_results.json"
+  val: "Centernet_HG/centernet_hourglass_results.json"
+  test: "Centernet_HG/centernet_hourglass_test_results.json"
+
+YOLOv5X:
+  train: "YOLOv5X/yolov5x_train_predictions.json"
+  val: "YOLOv5X/yolov5x_val_predictions.json"
+  test: "YOLOv5X/yolov5x_test_predictions.json"
+
+CenterNet2_R50:
+  train: "CenterNet2/centernet2_train_results.json"
+  val: "CenterNet2/centernet2_val_results.json"
+  test: "CenterNet2/centernet2_test-dev_results.json"
+
+SSD300:
+  train: "ssd_predictions_train.json"
+  val: "ssd_predictions_val.json"
+  test: "ssd_predictions_test.json"
+
+CenterNet_RN18:
+  train: "centernet_resnet18_dcnv2_140e/train2017.bbox.json"
+  val: "centernet_resnet18_dcnv2_140e/val2017.bbox.json"
+  test: "centernet_resnet18_dcnv2_140e/test-dev2017.bbox.json"
+
+Detr50:
+  train: "detr_r50_8x2_150e/train2017.bbox.json"
+  val: "detr_r50_8x2_150e/val2017.bbox.json"
+  test: "detr_r50_8x2_150e/test-dev2017.bbox.json"
+
+FasterRCNN:
+  train: "faster_rcnn_x101_64x4d_fpn_2x/train2017.bbox.json"
+  val: "faster_rcnn_x101_64x4d_fpn_2x/val2017.bbox.json"
+  test: "faster_rcnn_x101_64x4d_fpn_2x/test-dev2017.bbox.json"
+
+RetinaNet:
+  train: "retinanet_x101_64x4d_fpn_2x/train2017.bbox.json"
+  val: "retinanet_x101_64x4d_fpn_2x/val2017.bbox.json"
+  test: "retinanet_x101_64x4d_fpn_2x/test-dev2017.bbox.json"
+
+YOLOv3:
+  train: "yolov3_d53_320_273e/train2017.bbox.json"
+  val: "yolov3_d53_320_273e/val2017.bbox.json"
+  test: "yolov3_d53_320_273e/test-dev2017.bbox.json"
+
+Efficientdet_D0:
+  val: "efficientdet-d0/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d0/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d0/test/detections_test-dev2017_test_results.json"
+Efficientdet_D1:
+  val: "efficientdet-d1/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d1/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d1/test/detections_test-dev2017_test_results.json"
+Efficientdet_D2:
+  val: "efficientdet-d2/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d2/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d2/test/detections_test-dev2017_test_results.json"
+Efficientdet_D3:
+  val: "efficientdet-d3/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d3/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d3/test/detections_test-dev2017_test_results.json"
+Efficientdet_D4:
+  val: "efficientdet-d4/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d4/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d4/test/detections_test-dev2017_test_results.json"
+Efficientdet_D5:
+  val: "efficientdet-d5/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d5/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d5/test/detections_test-dev2017_test_results.json"
+Efficientdet_D6:
+  val: "efficientdet-d6/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d6/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d6/test/detections_test-dev2017_test_results.json"
+Efficientdet_D7:
+  val: "efficientdet-d7/val/detections_test-dev2017_test_results.json"
+  train: "efficientdet-d7/train/detections_test-dev2017_test_results.json"
+  test: "efficientdet-d7/test/detections_test-dev2017_test_results.json"
+
+CenterNet_HG_TTA_050:
+  val: "CenterNet_HG_TTA_050/val/results.json"
+  train: "CenterNet_HG_TTA_050/train/results.json"
+  test: "CenterNet_HG_TTA_050/test/results.json"
+CenterNet_HG_TTA_075:
+  val: "CenterNet_HG_TTA_075/val/results.json"
+  train: "CenterNet_HG_TTA_075/train/results.json"
+  test: "CenterNet_HG_TTA_075/test/results.json"
+CenterNet_HG_TTA_100:
+  val: "CenterNet_HG_TTA_100/val/results.json"
+  train: "CenterNet_HG_TTA_100/train/results.json"
+  test: "CenterNet_HG_TTA_100/test/results.json"
+CenterNet_HG_TTA_125:
+  val: "CenterNet_HG_TTA_125/val/results.json"
+  train: "CenterNet_HG_TTA_125/train/results.json"
+  test: "CenterNet_HG_TTA_125/test/results.json"
+CenterNet_HG_TTA_150:
+  val: "CenterNet_HG_TTA_150/val/results.json"
+  train: "CenterNet_HG_TTA_150/train/results.json"
+  test: "CenterNet_HG_TTA_150/test/results.json"
+CenterNet_HG_TTA_ens:
+  val: "CenterNet_HG_TTA_ens/val/results.json"
+  train: "CenterNet_HG_TTA_ens/train/results.json"
+  test: "CenterNet_HG_TTA_ens/test/results.json"

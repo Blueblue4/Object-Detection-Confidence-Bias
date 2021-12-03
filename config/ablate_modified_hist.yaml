@@ -1,0 +1,20 @@
+name: "ablate_modified_hist"
+defaults:
+  - all@_global_: default_calibrate
+  - _self_
+
+seed: 1
+apply_on: ["val_split2"]
+
+calib:
+  on_split: "val_split1"
+  split_size: 0.6
+  list_types: ["none", "baseline_indexing", "baseline_spline_centered_bound", "baseline_spline_centered", "quantile_spline_centered", "quantile_spline"]
+  box_bins: [3]
+  conf_bins: [7]
+
+optim:
+  metrics: ["ap_estimate"]
+  k_folds: 20
+  oracle_on: []
+

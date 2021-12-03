@@ -1,0 +1,19 @@
+name: "calibrate_train"
+defaults:
+  - all@_global_: default_calibrate
+  - _self_
+
+apply_on: ["val","test"]
+save_outputs: true
+
+calib:
+  on_split: "train"
+  list_types: ["quantile_spline"]
+  box_bins: [2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20] #
+  conf_bins: [4,5,6,8,10,12,14] #
+
+optim:
+  metrics: ["tradeoff_full", "oracle"]
+  k_folds: 20
+  oracle_on: "val"
+

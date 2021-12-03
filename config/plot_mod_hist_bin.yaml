@@ -1,0 +1,11 @@
+name: "plot_mod_hist_bin"
+defaults:
+  - all@_global_: default_plot_miscal
+  - _self_
+
+split: "val"
+
+calib:
+    type: "quantile_spline"
+    box_bins: 3
+    conf_bins: 14

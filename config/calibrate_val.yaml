@@ -1,0 +1,18 @@
+name: "calibrate_val"
+defaults:
+  - all@_global_: default_calibrate
+  - _self_
+
+apply_on: ["test"]
+save_outputs: true
+
+calib:
+  on_split: "val"
+  list_types: ["quantile_spline"]
+  box_bins: [2, 3, 4, 5, 6]
+  conf_bins: [4,5,6,8,10,12,14]
+
+optim:
+  metrics: ["tradeoff_full"]
+  k_folds: 20
+

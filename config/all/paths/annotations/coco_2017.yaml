@@ -1,0 +1,5 @@
+path: "data/coco/annotations"
+split:
+  train: "instances_val2017.json"
+  val: "instances_val2017.json"
+  test: "image_info_test-dev2017.json"
