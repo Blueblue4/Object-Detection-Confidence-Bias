@@ -1,5 +1,5 @@
 # The Box Size Confidence Bias Harms Your Object Detector - Code
-
+[![arxiv](https://img.shields.io/badge/arXiv-cs.CV:2112.01901-B31B1B.svg)](https://arxiv.org/abs/2112.01901)
 
 > **Disclaimer:**
 >This repository is for research purposes only. It is designed to maintain reproducibility of the experiments described in "The Box Size Confidence Bias Harms Your Object Detector".
@@ -149,3 +149,16 @@ python3 calibrate.py -cn calibrate_train_larger_cbbins
 ```bash
 python3 calibrate.py -cn calibrate_train name="influence_modelsize" detector="Efficientdet_D0","Efficientdet_D1","Efficientdet_D2","Efficientdet_D3","Efficientdet_D4","Efficientdet_D5","Efficientdet_D6","Efficientdet_D7" -m
 ```
+
+
+## Citation
+```
+@article{gilg2021box,
+      title={The Box Size Confidence Bias Harms Your Object Detector}, 
+      author={Johannes Gilg and Torben Teepe and Fabian Herzog and Gerhard Rigoll},
+      year={2021},
+      eprint={2112.01901},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```   
