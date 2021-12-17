@@ -6,7 +6,7 @@
 
 ## Setup
 ### Download Annotations
-Download COCO2017 annotations for train, val, and tes-dev from [here](https://cocodataset.org/#download)
+Download COCO2017 annotations for train, val, and test-dev from [here](https://cocodataset.org/#download)
 and move them into the folder structure like this (alternatively change the config in `config/all/paths/annotations/coco_2017.yaml` to your local folder structure): 
 ```
  .
@@ -109,7 +109,7 @@ python3 calibrate.py -cn explore_train
     ```bash
     python3 calibrate.py -cn calibrate_train name="calibrate_train_tta" detector="CenterNet_HG_TTA_050","CenterNet_HG_TTA_075","CenterNet_HG_TTA_100","CenterNet_HG_TTA_125","CenterNet_HG_TTA_150","CenterNet_HG_TTA_ens" -m
     ```
-3. Copy calibrated detections from `multirun/calibrate_train_tta/DATE/MODEL_NAME/quantile_spline_ontrain_opt_tradeoff_full/val/MODEL_NAME.json` to `data/calibrated/MODEL_NAME/val/results.json` for `MODEL_NAME in` `(CenterNet_HG_TTA_050, CenterNet_HG_TTA_075, CenterNet_HG_TTA_100, CenterNet_HG_TTA_125, CenterNet_HG_TTA_150)`.
+3. Copy calibrated detections from `multirun/calibrate_train_tta/DATE/MODEL_NAME/quantile_spline_ontrain_opt_tradeoff_full/val/MODEL_NAME.json` to `data/calibrated/MODEL_NAME/val/results.json` for `MODEL_NAME` in `(CenterNet_HG_TTA_050, CenterNet_HG_TTA_075, CenterNet_HG_TTA_100, CenterNet_HG_TTA_125, CenterNet_HG_TTA_150)`.
 4. Generate TTA of calibrated detections  
     ```bash
     python3 enseble.py -cn enseble
