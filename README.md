@@ -18,7 +18,7 @@ and move them into the folder structure like this (alternatively change the conf
         └── image_info_test-dev2017.json
 ```
 
-### Generate Detections
+### Generate Detections (or Download them [here](https://github.com/Blueblue4/Object-Detection-Confidence-Bias/releases/tag/v0.1))
 
 Generate detections on the train, val, and test-dev COCO2017 set, save them in the COCO file format as JSON files.
 Move detections to `data/detections/MODEL_NAME`, see `config/all/detections/default_all.yaml` for all the used detectors and to add other detectors.  
