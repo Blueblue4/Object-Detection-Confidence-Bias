@@ -1,4 +1,6 @@
 # The Box Size Confidence Bias Harms Your Object Detector - Code
+Accepted at WACV 2023 [link](https://openaccess.thecvf.com/content/WACV2023/papers/Gilg_The_Box_Size_Confidence_Bias_Harms_Your_Object_Detector_WACV_2023_paper.pdf)
+Previous Version:
 [![arxiv](https://img.shields.io/badge/arXiv-cs.CV:2112.01901-B31B1B.svg)](https://arxiv.org/abs/2112.01901)
 
 > **Disclaimer:**
@@ -153,12 +155,12 @@ python3 calibrate.py -cn calibrate_train name="influence_modelsize" detector="Ef
 
 ## Citation
 ```
-@article{gilg2021box,
-      title={The Box Size Confidence Bias Harms Your Object Detector}, 
-      author={Johannes Gilg and Torben Teepe and Fabian Herzog and Gerhard Rigoll},
-      year={2021},
-      eprint={2112.01901},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{gilg2023box,
+  title={The Box Size Confidence Bias Harms Your Object Detector},
+  author={Gilg, Johannes and Teepe, Torben and Herzog, Fabian and Rigoll, Gerhard},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={1471--1480},
+  year={2023}
 }
+
 ```   
